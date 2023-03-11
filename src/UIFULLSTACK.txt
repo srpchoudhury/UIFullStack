@@ -1,0 +1,214 @@
+fieldset
+legend
+details
+summary
+dl
+dt
+dd
+14:)=================================================(:14
+OrderdList
+<ol type="" start="" reversed>
+NestedList
+
+<ol type="I">
+            <li>HTML is ________language</li>
+            <ol type="a" id="optionsList">
+                <li>Programming</li>
+                <li>Functional</li>
+                <li>presentaion</li>
+                <li>structural</li>
+            </ol>
+        </ol>
+
+List Items In Multiple Columns:-
+================================
+<style>
+      #optionsList{
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+             margin-top: 15px;
+            }
+            li{
+                margin-right: 30px;
+            }
+</style>
+List items in side by side:-
+============================
+<style>
+      #optionsList{
+                display: flex;
+             
+            }
+            li{
+                margin-right: 30px;
+            }
+</style>
+
+Custom list as Bullet:-
+-----------------------
+ul{
+   list-style-image:url("assets/bullet.png");
+}
+
+Library for symbols in your project:-
+=====================================
+-Fontawesome
+-Bootstrap Icons
+
+Download and install Bootstrap icons for your project:
+======================================================
+1.open project terminal
+      [ctrl+`]
+2.type the follwing commend
+        >npm install bootstrap-icons --save
+3.All library files are copied into "node_modules" folder.
+4.go to html file and link "bootstrap-icons" css file.
+       <head>
+          <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+      </head>
+5.Every icon is accessed by using its class name,which you can apply for any container,<span> <div> <p> <dd> <li> etc..
+
+       <span class="bi bi-bell"></span>
+  
+     https://icons.getbootstrap.com
+NOTE: to remove numbering or bullet symbols for list items
+           ul,ol {
+              list-style:none;
+           }
+EX:
+Nav Bar:
+========
+
+      <head>
+        <title>Icons Demo</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul{
+            list-style: none;
+            position: fixed;
+            bottom: 0px;
+            right: 20px;
+            
+        }
+        li{
+            margin-bottom: 20px;
+            font-size: 30px;
+            ;background-color: darkcyan;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+      <div>
+            <ul>
+                  <li class="bi bi-facebook"></li>
+                  <li class="bi bi-linkedin"></li>
+                  <li class="bi bi-twitter"></li>
+                  <li class="bi bi-youtube"></li>
+            </ul>
+        </div>
+
+15:)text Effects(:15
+====================
+font
+   face,size,color
+font styles
+    bokd,italic
+font Effects
+   underline,strikeout,super script,subscript
+
+<font>  it is used to define face,size,color
+     face=Arial,Times New Roman,Script
+  EX: <h1><font face="monospace">Welcome to HTML</font></h1>
+
+16:)img(:16:
+============
+
+<img src="assets/IMG_20220505_103748-removebg-preview.jpg" alt="myImg: 1" height="20%" width="20%"
+             align="left" vspace="20" hspace="20" crossorigin="anonymous" decoding="sync" border="2px solid dotted" importance="low">
+
+
+cards:
+======
+  <div id="container">
+        <div id="card">
+            <div id="card-header">
+                <img src="assets/nit/Asp.Net.jpg" alt="">
+            </div>
+            <div id="card-body">
+                <h3>GoProgramming  Trainning</h3>
+                <p>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-half"></span>
+            </p>
+            </div>
+            <div id="card-footer">
+                <button> <span class="bi bi-search"></span>View Course</button>
+            </div>
+     </div>
+  </div>
+
+17:)Links in HTML(:17
+=====================
+FAQ.How to target any reference within the page with style?
+=>By using  ":target" selector
+
+   Ex:- 
+            .topic{
+                border: 2px solid black;
+                padding: 20px;
+                
+                color: black;
+                margin-bottom: 20px;
+            }
+           .topic:target{
+                background-color: black;
+                color: white;
+            }
+FAQ.How to change effects for element on mouse over?
+=>By using ":hover" selector
+        Ex:
+            .topic:hover {
+                background-color: yellow;
+                color: red;
+            }
+FAQ:How to remove underline for hyperlink?
+=>By using "text-decoration :none" with style
+      Ex:
+         a{
+        text-decoration:none;
+        }
+FAQ:How to change color for HyperLink?
+=>a:link{
+       effects for normal link;
+  }
+
+  a:visited {
+       effects for visited link;
+  }
+  a:active {
+       effects for active link;
+  }
+  a {
+    //effects for all phases [visited,normal and active]
+  }
+
+18:)Links in HTML(:18
+=====================
+-Intra Document Links
+-Inter Document Links
+     -Handling navigation from one page to another page.
+     -Navigates to any specific file,url,application
+
+
+
+
+
+
+
+
+

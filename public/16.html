@@ -2,10 +2,97 @@
 <html>
     <head>
         <title>16 images</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            #card{
+                width: 200px;
+                box-shadow: 3px 2px 3px gray;
+                border: 2px solid black;
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+            }
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            button{
+                width: 100%;
+                font-size: 20px;
+                background-color: tomato;
+                color: white;
+            }
+            p{
+                color: orange;
+            }
+           
+        </style>
     </head>
     <body>
-        <img src="assets/IMG_20220505_103748-removebg-preview.jpg" alt="myImg: 1" height="20%" width="20%" align="left" vspace="20" hspace="20" crossorigin="anonymous" decoding="sync" border="2px solid dotted">
+        <!-- <img src="assets/IMG_20220505_103748-removebg-preview.jpg" alt="myImg: 1" height="20%" width="20%" align="left" vspace="20" hspace="20" crossorigin="anonymous" decoding="sync" border="2px solid dotted" importance="low">
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi optio aut, et enim expedita. Quia vero doloribus optio quisquam minus autem, sapiente asperiores nobis natus ipsum animi fugiat hic.</p>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea provident sit nostrum iste maiores aut animi pariatur sequi praesentium porro nisi delectus doloremque esse ducimus dolor atque, tempore veniam harum.</p>
-    </body>
+    -->
+
+    <div id="container">
+         <div id="card">
+            <div id="card-header">
+                <img src="assets/speakers.jpg"  width="100%" height="200" alt="">
+                
+            </div>
+            <div id="card-body">
+                <h3>JBL Speaker</h3>
+                
+                <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </p>
+               
+            </div>
+            <div id="card-footer">
+                <button> <span class="bi bi-cart4"></span>Add to Cart</button>
+            </div>
+         </div>
+         <div id="card">
+            <div id="card-header">
+                 <h3>Nike Casuals</h3>
+            </div>
+            <div id="card-body">
+              <img src="assets/NikeCasuals_files/8-15386898-nike-black-original-imaghzr3grzq9cb7(1).jpeg" width="100%" height="200" alt="">
+              <p> &#8377; 499.00</p>
+            </div>
+            <div id="card-footer">
+                <button> <span class="bi bi-cart4"></span>Add to Cart</button> 
+            </div>
+         </div>
+         <div id="card">
+            <div id="card-header">
+                <h3>Lee Boot</h3>
+            </div>
+            <div id="card-body">
+                <img src="assets/NikeCasuals_files/8-15386898-nike-black-original-imaghzr3vsrs5gbe.jpeg" width="100%" height="200" alt="">
+                <p> &#8377; 799.00</p>
+            </div>
+            <div id="card-footer">
+                <button> <span class="bi bi-cart4"></span>Add to Cart</button> 
+            </div>
+         </div>
+         <div id="card">
+            <div id="card-header">
+                <h3>Shirt</h3>
+            </div>
+            <div id="card-body">
+                <img src="assets/shirts.jpg" width="100%" height="200" alt="">
+                <p> &#8377; 799.00</p>
+            </div>
+            <div id="card-footer">
+                <button> <span class="bi bi-cart4"></span>Add to Cart</button> 
+            </div>
+         </div>
+         
+    </div>
+    </body> 
 </html>
