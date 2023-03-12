@@ -2,11 +2,22 @@
 <html>
     <head>
         <title>Register</title>
+        <style>
+           ul {
+            border: 2px solid;
+            padding: 5px;
+            list-style: none;
+            height: 100px;
+            width: 140px;
+            overflow: auto;
+           }
+        </style>
     </head>
     <body>
         <h2>Register User</h2>
-        <form action="">
-            <dl>
+        
+        <!-- <form action="">
+            <dl >
                 <dt>User Name</dt>
                 <dd>
                     <input type="text">
@@ -22,8 +33,42 @@
                 </dd>
                 <dt>Departure</dt>
                 <dd><input type="url" name="website"></dd>
+                <dt>Upload your Resume</dt>
+                <dd>
+                    <input type="file" accept=".pdf" name="resume" multiple>
+                </dd>
+                <dt>Select a color</dt>
+                <dd>
+                    <input type="color" name="color" value="#ff0000">
+                </dd>
+                <dt>Select Gender</dt>
+                <dd>
+                    <input type="radio" name="Gender" checked value="male"> Male
+                    <input type="radio" name="Gender" value="female"> Female
+                </dd>
             </dl>
             <button>Register</button>
+      
+        </form> -->
+        <form action="">
+            <dl>
+                <dt>Select Courses</dt>
+                <dd>
+                    <ul>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+           <li> <input type="checkbox" name="courses"   value="oracle"> Oracle</li>
+        </ul>
+        </dd>
+        </dl>
         </form>
+     
     </body>
 </html>
