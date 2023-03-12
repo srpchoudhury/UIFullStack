@@ -2,6 +2,12 @@
 <html>
     <head>
         <title>Dro[down</title>
+        <style>
+            meter {
+                width: 100%;
+                height: 20px;
+            }
+        </style>
     </head>
     <body class="container">
         
@@ -16,7 +22,7 @@
             </select>
             <button>Register</button>
         </form> -->
-        <select name="category" id="" size="5" multiple>
+        <!-- <select name="category" id="" size="5" multiple>
             <option value="">Select Category</option>
             <optgroup label="Electronics">
                  <option value="">TV</option>
@@ -28,8 +34,22 @@
             </optgroup>
           
         </select>
-        <button>Register</button>
-            
+        <button>Register</button> -->
+            <fieldset>
+                <legend>Password Strength</legend>
+                <dl>
+                    <dt>Strong Password</dt>
+                    <dd>
+                        <meter min="1" max="100" value="20"></meter>
+                    </dd>
+                    <dt>Weak Password</dt>
+                    <dd>
+                        <meter min="1" max="100" value="100" low="0" high="0"></meter>   :green
+                        <meter min="1" max="100" value="100" low="20" high="80"></meter> :yellow
+                        <meter min="1" max="100" value="100" low="60" high="80"></meter> :red
+                    </dd>
+                </dl>
+            </fieldset>
         
     </body>
 </html>
