@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #Age:in-range {
+        border: 2px solid green;
+        box-shadow: 2px 3px 3px green;
+     }
+      #Age:out-of-range {
+        border: 2px solid red;
+        box-shadow: 2px 3px 3px red;
+       }
+       #Age:in-range+span {
+        display: none;
+       }
+       #Age:out-of-range+span {
+        display: inline;
+       }
+    </style>
+</head>
+<body>
+    <h3>Register User</h3>
+    <dl>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" value="15" id="Age" min="15" max="25">
+            <span>Age 15-25 only</span>
+        </dd>
+    </dl>
+</body>
+</html>

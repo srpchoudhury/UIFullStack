@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+           section {
+             height: 500px;
+           }
+           header, footer {
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            padding: 10px;
+           }
+           .container {
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+           }
+           header {
+            grid-row: 1;
+            grid-column: 1/4;
+           }
+           footer {
+            grid-row: 3;
+            grid-column: 1/4;
+           }
+           section {
+            grid-row: 2;
+            grid-column: 1/4;
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+           }
+           nav {
+            overflow: auto;
+            height: 500px;
+           }
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amazon Shopping</h1>
+    
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li> <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Footware</li>
+                    <li>Fashion</li>
+
+                </ul>
+            </nav>
+            <main>
+                <h3>Shop | Online</h3>
+                <p>Special Offers On Electronics</p>
+            </main>
+            <aside>
+                50% OFF
+            </aside>
+        </section>
+        <footer>
+            <p>&copy; copyright 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
