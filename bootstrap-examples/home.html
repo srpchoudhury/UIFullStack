@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Bootstrap</title>
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    </head>
-    <body>
-        <h1>Welcome to Bootstrap</h1>
-        <script src="../node_modules/jquery/dist/jquery.js"></script>
-    </body>
+  <head>
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <style></style>
+  </head>
+  <body>
+
+   <div class="container-fluid">
+     <h2>Link Button</h2>
+     <button class="btn btn-link">Sign In</button>
+     <button class="btn-close"></button>
+     <h2>Block Button</h2>
+     <button class="btn btn-dark w-100">Back to top</button>
+    <h2>Button Base Classes</h2>
+     <button class="btn btn-primary">Insert</button>
+     <button class="btn btn-success">Update</button>
+     <button class="btn btn-danger">Delete</button>
+     <h2>Button Outline</h2>
+     <button class="btn btn-outline-primary btn-sm">Insert</button>
+     <button class="btn btn-outline-success">Update</button>
+     <button class="btn btn-outline-danger btn-lg">Delete</button>
+     <h2>Button Group</h2>
+     <div class="btn-group btn-group-vertical">
+     <button class="btn btn-outline-primary">Insert</button>
+     <button class="btn btn-outline-success">Update</button>
+     <button class="btn btn-outline-danger">Delete</button>
+     
+     </div>
+     <h2>Button Toolbar</h2>
+     <div class="btn-toolbar bg-danger justify-content-between">
+       <div class="btn-group">
+   <button class="btn btn-danger"><span class="bi bi-house-door"></span>Home</button>
+   <button class="btn btn-danger">About</button>
+   <button class="btn btn-danger">Contact</button>
+       </div>
+       <div class="btn-group">
+     <button class="btn btn-danger">Login</button>
+     <button class="btn btn-danger">Search</button>
+       </div>
+     </div>
+
+    <!-- <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <h2 class="alert-title">Delete Record</h2>
+        <p class="alert-text"> Selected record will be deleted</p>
+        <a href="#" class="alert-link">Help?</a>
+        <button data-bs-dismiss="alert">OK</button>
+    </div> -->
+        <!--  <div class="w-75 border border-danger p-4">
+            <h2>Register</h2>
+        <button class="w-25">Register</button>
+        </div> -->
+        <!-- <h2 class="bg-dark text-white position-sticky top-0 ">HTML Tutorial</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        
+        <h2 class="bg-dark text-white position-sticky top-0 ">CSS Tutorial</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo totam adipisci? Aut fugiat hic atque, labore ullam ducimus accusantium excepturi nobis a, quasi deleniti necessitatibus et fugit. Quasi earum doloribus cupiditate sapiente atque voluptatem quibusdam distinctio, tenetur assumenda non pariatur provident repellat quos numquam quo molestiae dignissimos saepe vitae ab hic eaque animi molestias est alias. Autem fugiat eius veniam distinctio qui modi iure id nesciunt odio ratione quod quasi tempora error incidunt perferendis esse architecto, totam tenetur! Quisquam accusamus inventore ipsa eveniet sit optio cum beatae molestias sed? Laudantium alias dicta ad consequatur quia nemo soluta rem debitis?</p>
+         -->
+        <!-- <div class="row bg-danger text-white">
+            <div class="col">
+                <h1 class="text-center">Amazon Shopping</h1>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-3">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, iste. Sed optio voluptates veritatis enim rerum labore nam ullam nulla consectetur. Nobis nihil ipsum qui possimus dolore excepturi pariatur reiciendis alias, molestiae ex at aut expedita ut a recusandae, enim modi nostrum tempore. Facilis mollitia numquam quasi, maxime aut ipsam veritatis aliquid, excepturi voluptatum alias distinctio assumenda iusto cumque voluptatem ad, perferendis eaque culpa eum accusantium! Blanditiis asperiores odio fugiat magni iusto voluptas, accusantium neque rem ex, repellat quibusdam, porro suscipit consectetur provident inventore error tenetur soluta numquam voluptatum aspernatur maxime ut? Earum explicabo dicta porro aut pariatur, in assumenda. Voluptates odit magnam laudantium maiores corporis saepe laborum! Voluptatum quis, odit dolorem quod voluptate quas pariatur? Aspernatur dolor enim expedita cupiditate, libero delectus est hic sunt ad eius sint aut totam neque possimus voluptate rerum explicabo voluptatum temporibus, commodi minima, tempore distinctio repudiandae? Ipsa magnam nostrum obcaecati quas sit pariatur.
+           </div>
+           <div class="col-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus, ipsum voluptatibus amet quia labore molestias? Vel alias voluptas molestiae ea modi asperiores inventore, incidunt iste! Maiores odio impedit nulla debitis molestias expedita incidunt, blanditiis commodi, rerum itaque voluptatem earum similique iure sed consequatur fuga quia non tempore dolor reprehenderit sunt quaerat omnis, autem ab! Iste ratione optio quasi beatae natus, blanditiis voluptatibus! Enim, cumque incidunt animi tempora numquam minima dignissimos, ducimus iure fugit ratione aliquid odio error qui? Corrupti illo totam aperiam culpa possimus ab perspiciatis magnam optio aut. Doloremque perspiciatis expedita ad, eaque enim iusto error officia ex! Inventore facere numquam ipsa saepe natus, accusamus itaque. Deleniti fugit rerum quos atque, possimus quidem asperiores ratione porro error consectetur ut itaque blanditiis! Maiores, nam eum. Itaque, minima laboriosam quasi ut error esse veritatis voluptatibus consectetur iure illum animi quisquam saepe? Dicta nulla fugiat labore ut inventore possimus, temporibus ab. 
+           </div>
+           <div class="col-3">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, neque sapiente. Beatae quae accusamus labore autem nemo? Alias consequatur praesentium laudantium velit ut sit amet blanditiis, atque ipsum harum! Consectetur a vitae porro! Fuga cumque labore necessitatibus? Ab dicta nesciunt assumenda id officia, aperiam ipsum iure ex vitae facilis at est esse architecto unde nostrum, hic nulla odit eaque modi reiciendis quaerat tempora! Veniam praesentium unde esse commodi eligendi officiis nisi, eius ullam est doloremque! Dolorum voluptatum praesentium illo repellat nemo obcaecati reprehenderit voluptate non, corporis tempore, rerum, ipsum quam optio. Nesciunt ut sequi labore. Accusantium deleniti aut nobis libero?
+           </div>
+           <div class="row bg-danger text-white text-center">
+                <div class="col">
+                    <div>&copy; copyright</div>
+                </div>
+           </div>
+        </div> -->
+        <!-- <h2>Product Details</h2>
+        <dl class="row">
+            <dt class="col-3">Name</dt>
+            <dd class="col-9">Samsung TV</dd>
+            <dt class="col-3">Price</dt>
+            <dd class="col-9">5600</dd>
+            <dt class="col-3">Stock</dt>
+            <dd class="col-9">Available</dd>
+        </dl> -->
+
+       <!-- <div>
+        <div class="d-flex  justify-content-center align-items-center" style="height: 400px">
+            <form action="">
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password"></dd>
+                </dl>
+                <button>Login</button>
+            </form>
+        </div>
+       </div> -->
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>

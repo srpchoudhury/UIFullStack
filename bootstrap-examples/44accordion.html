@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        
+    </style>
+</head>
+<body class="container-fluid">
+      <h2>Accordion</h2>
+      <div class="accordion" id="topics">
+           <div class="accordion-item">
+               <div class="accordion-header">
+                  <button class=" btn btn-danger w-100" data-bs-toggle="collapse" data-bs-target="#css">
+                    <h3>CSS Tutorial</h3>
+                  </button>
+               </div>
+               <div id="css" data-bs-parent="#topics" class="accordion-body accordion-collapse collapse show">
+                 <p>Something about Lorem ipsum dolor, sit amet consectetur adipisicing elit. C
+                    umque distinctio quia magni beatae odio consequatur numquam tempora sit saepe
+                     ab assumenda impedit necessitatibus minus maxime odit accusamus, et alias? Rerum
+                      possimus delectus, ipsam, molestiae aliquam aperiam reiciendis distinctio dolorem
+                      que dignissimos nostrum pariatur adipisci non unde eius quos ut incidunt totam</p>
+               </div>
+           </div>
+           <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="btn btn-outline-success w-100" data-bs-toggle="collapse" data-bs-target="#html">
+                    <h3>HTML Tutorial</h3>
+                </button>
+            </div>
+            <div class="accordion-body accordion-collapse collapse " id="html" data-bs-parent="#topics">
+              <p>Something about HTML..</p>
+            </div>
+           </div>
+           <div class="accordion-item">
+            <div class="accordion-header">
+               <button class="btn btn-outline-primary w-100" data-bs-toggle="collapse" data-bs-target="#js" >
+                <h3>JavaScript Tutorial</h3>
+               </button>
+            </div>
+            <div class="accordion-body accordion-collapse collapse" id="js" data-bs-parent="#topics">
+              <p>Something about js..</p>
+            </div>
+           </div>
+      </div>
+  
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

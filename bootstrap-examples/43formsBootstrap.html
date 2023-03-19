@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center" style="height:500px">
+    <div>
+       <h2>Register User</h2>
+       <div class="mb-2">
+        <label class="form-label" for="UserName">User Name</label>
+        <div class="input-group">
+            <span class="bi bi-person input-group-text"></span>
+            <input type="text" name="UserName" class="form-control">
+            <span class="bi bi-check-circle input-group-text"></span>
+        </div>
+        <div class="mb-2">
+            <label class="form-label" for="Password">Password</label>
+            <div class="input-group">
+                <span class="bi bi-key-fill input-group-text"></span>
+                <input type="Password" name="Password" class="form-control">
+                <span class="bi bi-check-circle input-group-text"></span>
+            </div>
+        </div>
+        <div class="mb-2">
+             <label for="City" class="form-label">Choose City</label>
+             <div>
+                <select name="City" id="" class="form-select">
+                    <option value="">Select Your City</option>
+                    <option value="">Delhi</option>
+                    <option value="">Odisha</option>
+                </select>
+             </div>
+        </div>
+        <div class="mb-2">
+            <label class="form-label" for="subscribe">You want subscription</label>
+            <div class="form-switch">
+                <input type="checkbox" class="form-check-input" name="subscribe"><label class="form-check-label">Yes</label>
+            </div>
+        </div>
+        <div class="mb-2">
+                  <label class="form-label" for="age">Select Age</label>
+                  <div>
+                    <input type="range"name="age" class="form-range">
+                  </div>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-primary w-100">Register</button>
+        </div>
+       </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
