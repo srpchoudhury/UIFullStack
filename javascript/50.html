@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // function bodyload(){
+
+      // document.querySelector("#pic").src="../public/images/mobile.png";
+      // document.querySelector(".btn-register").value="Register";
+      // document.querySelector(".btn-login").value="Login";
+
+      // document.getElementById("pic").src="../public/images/mobile.png";
+      // document.getElementById("btnRegister").value="Register";
+      // document.getElementById("btnLogin").value="Login";
+
+      //    pic.src="../public/images/laptop.png";
+      // //    window.document.forms[0].btnRegister.value="Register";
+      //    frmRegister.btnRegister.value="Register";
+      //    frmLogin.btnLogin.value="Login";
+
+      // window.document.images[0].src= "../public/images/laptop.png";
+      // window.document.forms[0].elements[1].value="Register";
+      // window.document.forms[1].elements[1].value="Login"
+
+      //  result= document.getElementsByName("pay");
+      // result= document.getElementsByClassName("form-check-input");
+      //             result= document.getElementsByTagName("h2");
+      //            // alert("total no of payment methods :"+result.length);
+      // //alert("Radios with input class :"+result.length);
+      //             alert("Total no of headings :"+result.length);
+      // }
+      function DeleteClick() {
+        console.warn("Record will be deleted");
+        if (confirm("Are you sure want to delete?") == true) {
+          // alert("Record deleted");
+          // document.write("Record deleted");
+          // document.querySelector("h1").innerText="Record Deleted";
+          // document.querySelector("h1").innerHTML="<font color='red'>Record deleted</font>";
+          document.querySelector("h1").outerHTML =
+            "<p>deleted successfully</p>";
+          console.error("Deleted.. you clicked ok");
+        } else {
+          alert("You canceld");
+          console.log("You clicked cancel");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- onload="bodyload()" -->
+    <h2>Click delete button to remove record.</h2>
+    <button onclick="DeleteClick()">Delete</button>
+    <h1 align="center"></h1>
+
+    <!-- <h2>Register</h2>
+
+    <fieldset>
+        <legend>Payment Method</legend>
+        <input type="radio" class="form-check-input" name="pay">Cash
+        <input type="radio" class="form-check-input" name="pay">UPI
+        <input type="radio" class="form-check-input" name="pay">Credit Card
+    </fieldset>
+    <h2>Login</h2> -->
+    <!-- <img width="100" id="pic" name="pic" height="100" border="1">
+    <div>
+        <form action="" name="frmRegister" >
+            <h2>Register</h2>
+            user Name: <input type="text" name="txtName"> <input type="button" id="btnRegister" class="btn-register" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form action="" name="frmLogin">
+            <h2>Login</h2>
+            Email: <input type="email" name="txtxEmail"> <input type="button" name="btnLogin" class="btn-login" id="btnLogin">
+        </form>
+    </div> -->
+  </body>
+</html>

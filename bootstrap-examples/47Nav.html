@@ -16,37 +16,57 @@
     <style></style>
   </head>
   <body class="container-fluid">
-    <button onclick="alert('Inserted')">Insert</button>
-    <a href="javascript:alert('Deleted')">Delete</a>
-     
-      <h2>Product Info</h2>
-      <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link">Basic Details</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Preview</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Description</a></li>
-      </ul>
-      <div class="tab-content">
-            <div class="tab-pane active" id="basic">
-                  <h2>Basic Details</h2>
-                  <dl>
-                    <dt>Name</dt>
-                    <dd>Boat NeckBand</dd>
-                    <dt>Price</dt>
-                    <dd>4599</dd>
-                  </dl>
-            </div>
-            <div class="tab-pane " id="preview">
-                <h2>Preview</h2>
-                <dl>
-                 <img src="../public/images/carousal1.png" width="200" height="200" alt="">
-                </dl>
-          </div>
-          <div class="tab-pane" id="description">
-               <h2>Description</h2>
-               <p>Lorem ipsum dolor Repellat magnam minus eligendi provident rem cupiditate neque perferendis est perspiciatis molestiae?
-               </p>
-          </div>
+    <h2>Product Info</h2>
+    <ul class="nav nav-tabs">
+      <li class="nav-item active">
+        <button data-bs-toggle="tab" data-bs-targe="#basic" class="nav-link">
+          Basic Details
+        </button>
+      </li>
+      <li class="nav-item">
+        <button data-bs-toggle="tab" data-bs-targe="#preview" class="nav-link">
+          Preview
+        </button>
+      </li>
+      <li class="nav-item">
+        <button
+          data-bs-toggle="tab"
+          data-bs-targe="#description"
+          class="nav-link"
+        >
+          Description
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane show fade active" id="basic">
+        <h2>Basic Details</h2>
+        <dl>
+          <dt>Name</dt>
+          <dd>Boat NeckBand</dd>
+          <dt>Price</dt>
+          <dd>4599</dd>
+        </dl>
       </div>
+      <div class="tab-pane show fade" id="preview">
+        <h2>Preview</h2>
+        <dl>
+          <img
+            src="../public/images/carousal1.png"
+            width="200"
+            height="200"
+            alt=""
+          />
+        </dl>
+      </div>
+      <div class="tab-pane" id="description">
+        <h2>Description</h2>
+        <p>
+          Lorem ipsum dolor Repellat magnam minus eligendi provident rem
+          cupiditate neque perferendis est perspiciatis molestiae?
+        </p>
+      </div>
+    </div>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
